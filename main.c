@@ -1,38 +1,26 @@
-
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
-// Define a structure to represent a book
-typedef struct {
-    char author[50];
-    char title[100];
-    float price;
-} Book;
+int main()
+{
+    char username[]="kihore";
+    char pass[]="kis123";
+    char password[20];
+    printf("\nUsername:%s",username);
+    printf("\nEnter the password:");
 
-int main() {
-    // Create a Book structure variable
-    Book book;
+    scanf("%s",password);
+    if(strcmp(pass,password)==0)
+    {
+        printf("validate");
 
-    // Input book details
-    printf("Enter book title: ");
-    fgets(book.title, sizeof(book.title), stdin);
-    book.title[strcspn(book.title, "\n")] = 0; // Remove newline character
+    }
+    else
+    {
+        printf("validate");
+        printf("\nUsername:%s",username);
+        printf("\npassword:%s",password);
 
-    printf("Enter author name: ");
-    fgets(book.author, sizeof(book.author), stdin);
-    book.author[strcspn(book.author, "\n")] = 0; // Remove newline character
-
-    printf("Enter book price: ");
-    scanf("%f", &book.price);
-
-    // Print book details
-    printf("\nBook Details:\n");
-    printf("Title: %s\n", book.title);
-    printf("Author: %s\n", book.author);
-    printf("Price: ₹%.2f\n", book.price);
-
+    }
     return 0;
 }
-
-
-
