@@ -1,5 +1,16 @@
-# depslib dependency file v1.0
-1768281619 source:c:\users\vogo\documents\pratice1\user name laptp\main.c
-	<stdio.h>
-	<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char username []="kishor";
+    char password[20];
+    printf("enter the user name:");
+    scanf("%s\n,password");
+    printf("\nUser name: %s",username);
+    scanf("\nPassword: %s",password);
+
+    return 0;
+}
+
 
